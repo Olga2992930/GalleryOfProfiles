@@ -1,0 +1,35 @@
+body {
+    font-family: Tajawal, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #afcadd;
+    color: white;
+}
+
+#gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: hsl(0, 0%, 95%);
+    font-size: 0.75rem;
+   
+}
+
+div {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    font-weight: 700;
+    color: #1a1a1a;
+    background-color: hsl(0, 0%, 90%);
+}
+
