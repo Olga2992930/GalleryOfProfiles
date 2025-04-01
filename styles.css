@@ -13,16 +13,6 @@ header {
     color: white;
 }
 
-#gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    padding: 20px;
-    background-color: hsl(0, 0%, 95%);
-    font-size: 0.75rem;
-   
-}
-
 div {
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -32,4 +22,29 @@ div {
     color: #1a1a1a;
     background-color: hsl(0, 0%, 90%);
 }
+
+#gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:20px;
+    background-color: hsl(0,0%, 95%);
+    font-size: 0.75rem;
+}
+
+/*för tablets*/
+@media screen and (max-width: 992px) {
+    #gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/*för mobiltelefoner*/
+@media screen and (max-width: 600px) {
+    #gallery {
+grid-template-columns: 1fr;
+    }
+}
+
+
+
 
