@@ -13,6 +13,30 @@ header {
     color: white;
 }
 
+nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #hamburger-menu {
+    display: none;
+    flex-direction: column;
+    gap: 0.25rem;
+    width: 2rem;
+    background-color: transparent;
+    border: none;
+  }
+  
+  .hamburger-line {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+  }
+
 div {
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -40,6 +64,23 @@ div {
 
 /*för mobiltelefoner*/
 @media screen and (max-width: 600px) {
+    /*Hamburger menu*/
+    #hamburger-menu {
+        display: flex;
+      }
+    
+      nav ul {
+        display: none;
+        position: absolute;
+        z-index: 1;
+        background-color: white;
+      }
+    
+      nav:hover ul {
+        display: flex;
+        flex-direction: column;
+      }
+       /*Hamburger menu*/
     #gallery {
 grid-template-columns: 1fr;
     }
