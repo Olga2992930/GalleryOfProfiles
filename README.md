@@ -1,4 +1,4 @@
-Profile Gallery
+Profile Gallery.
 En dynamisk webbapplikation som hämtar och visar profiler från en extern API-tjänst
 (https://randomuser.me/).
 Projektet innehåller:
